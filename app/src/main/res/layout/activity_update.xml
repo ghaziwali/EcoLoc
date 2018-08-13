@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecoloc.startapp.com.adapters.UpdateActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Modifier votre Annonce"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:paddingVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/vehicleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Titre"
+                android:inputType="text" />
+
+            <AutoCompleteTextView
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Ville"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Description"
+                android:inputType="textMultiLine" />
+
+
+            <EditText
+                android:id="@+id/pricePerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Prix par jour"
+                android:inputType="numberDecimal" />
+
+            <RadioGroup
+                android:id="@+id/transmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Type de transmission" />
+
+                <RadioButton
+                    android:id="@+id/manual_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Transmission manuelle" />
+
+                <RadioButton
+                    android:id="@+id/auto_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transmission Automatique" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Type de véhicule"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/vehicleTypePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/Types"
+                    android:prompt="@string/type_prompt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Marque de véhicule"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/vehicleModelPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/Models"
+                    android:prompt="@string/model_prompt" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="confirmer"
+            android:textColor="@color/white" />
+
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecoloc.startapp.com.ProfileEditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Modifier votre profile"
+        app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_input"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_centerInParent="true"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom Complet"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:text="confirmer"
+        android:textColor="@color/white" />
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">EcoLoc</string>
+    <string name="title_activity_main">EcoLoc</string>
+    <string name="tab_text_1">Accueil</string>
+    <string name="tab_text_2">Mes voitures</string>
+    <string name="tab_text_3">Profile</string>
+    <string name="action_settings">Parametres</string>
+
+    <string-array name="Models">
+        <item name="Peugeot">Peugeot</item>
+        <item name="Renault">Renault</item>
+        <item name="Citroën">Citroën</item>
+        <item name="Audi">Audi</item>
+        <item name="ALPHA ROMEO	">ALPHA ROMEO</item>
+        <item name="BMW">BMW</item>
+        <item name="DACIA">DACIA</item>
+        <item name="DFSK">DFSK</item>
+        <item name="FIAT">FIAT</item>
+        <item name="Ford">Ford</item>
+        <item name="HONDA">HONDA</item>
+        <item name="Hyndai">Hyndai</item>
+        <item name="Jaguar">Jaguar</item>
+        <item name="KIA">KIA</item>
+        <item name="JEEP">JEEP</item>
+        <item name="MITSUBISHI">MITSUBISHI</item>
+        <item name="NISSAN">NISSAN</item>
+        <item name="PORSCHE">PORSCHE</item>
+        <item name="SEAT">SEAT</item>
+        <item name="Škoda">Škoda</item>
+        <item name="SUZUKI">SUZUKI</item>
+        <item name="TATA">TATA</item>
+        <item name="TOYOTA">TOYOTA</item>
+        <item name="Volkswagen">Volkswagen</item>
+        <item name="Chevrolet">Chevrolet</item>
+        <item name="Mahindra">Mahindra</item>
+        <item name="ISUZU">ISUZU</item>
+        <item name="MINI">MINI</item>
+        <item name="LAND ROVER">LAND ROVER</item>
+        <item name="Mercedes">Mercedes</item>
+        <item name="Volvo">Volvo</item>
+        <item name="Mazda">Mazda</item>
+        <item name="Bentley">Bentley</item>
+        <item name="infinity">infinity</item>
+        <item name="Iveco">Iveco</item>
+        <item name="Lexus">Lexus</item>
+        <item name="MAN">MAN</item>
+        <item name="Maserati">Maserati</item>
+        <item name="Opel">Opel</item>
+        <item name="Rolls Royce">Rolls Royce</item>
+        <item name="Tesla">Tesla</item>
+    </string-array>
+
+    <string-array name="Types">
+        <item name="Véhicule particulier">Véhicule particulier</item>
+        <item name="Véhicule utilitaire">Véhicule utilitaire</item>
+        <item name="Véhicule industriel tracteur de remorque">Véhicule industriel tracteur de remorque</item>
+        <item name="Véhicule industriel tracteur de semi-remorque">Véhicule industriel tracteur de semi-remorque</item>
+    </string-array>
+
+    <string-array name="villes">
+        <item name="Ariana">Ariana</item>
+        <item name="Béja">Béja</item>
+        <item name="Ben Arous">Ben Arous</item>
+        <item name="Bizerte">Bizerte</item>
+        <item name="Gabès">Gabès</item>
+        <item name="Gafsa">Gafsa</item>
+        <item name="Jendouba">Jendouba</item>
+        <item name="Kairouan">Kairouan</item>
+        <item name="Kasserine">Kasserine</item>
+        <item name="Kebili">Kebili</item>
+        <item name="Kef">Kef</item>
+        <item name="Mahdia">Mahdia</item>
+        <item name="Manouba">Manouba</item>
+        <item name="Medenine">Medenine</item>
+        <item name="Monastir">Monastir</item>
+        <item name="Nabeul">Nabeul</item>
+        <item name="Sfax">Sfax</item>
+        <item name="Sidi Bouzid">Sidi Bouzid</item>
+        <item name="Sousse">Sousse</item>
+        <item name="Tataouine">Tataouine</item>
+        <item name="Tozeur">Tozeur</item>
+        <item name="Tunis">Tunis</item>
+        <item name="Zaghouan">Zaghouan</item>
+    </string-array>
+
+
+    <string name="type_prompt">Choisissez un type</string>
+    <string name="model_prompt">Choisissez un modèle</string>
+
+
+</resources>

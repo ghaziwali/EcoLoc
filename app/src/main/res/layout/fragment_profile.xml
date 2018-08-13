@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="ecoloc.startapp.com.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    app:civ_border_color="#FFF"
+                    app:civ_border_width="2dp" />
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="40dp"
+                    android:fontFamily="@font/big_jhon"
+                    android:lineSpacingExtra="24sp"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    app:fontFamily="@font/big_jhon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/user_profile_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/big_jhon"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</LinearLayout>

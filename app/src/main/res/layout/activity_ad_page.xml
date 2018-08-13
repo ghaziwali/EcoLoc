@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecoloc.startapp.com.adPageActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title=""
+        app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/adImages"></android.support.v7.widget.RecyclerView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f7f7f5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diplayText"
+                android:textSize="18dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/info_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_margin="10dp"
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="2dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:id="@+id/user_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user name" />
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:id="@+id/user_profile_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456789" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/green"
+                android:text="reserver"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
